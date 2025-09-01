@@ -33,14 +33,23 @@ The goal is not to provide download or implementation details, but to **clarify 
 
 ## 3. YouCook2
 - **Domain & Task**: Cooking instructional videos; mainly used for *Video Captioning* and *Instructional Understanding*.  
-- **Scale & Length**: ~2,000 videos (~176 hours); average 5–10 minutes.  
+- **Scale, Length, FPS**:
+- 
+<p align="center">
+  <img src="assets/Youcookii_checklist.png" alt="Dataset overview" width="720">
+</p>
+
+### Split statistics
+| split      | n_videos | total_minutes | avg_minutes_per_video |
+|:-----------|---------:|--------------:|----------------------:|
+| testing    |      190 |       1005.76 |                  5.29 |
+| training   |     1161 |       6139.07 |                  5.29 |
+| validation |      410 |       2132.85 |                  5.20 |
+| **total**  |   **1761** |     **9277.67** |               **5.27** |
+
 - **Annotation Granularity**: Segment-level cooking steps with captions.  
 - **Modalities**: Video, Audio, Text (captions).  
 - **Key Challenges**: Long dependencies between sequential steps; fine-grained reasoning required.  
-- **Visualization Ideas**:  
-  - Histogram of video lengths.  
-  - Example video timeline with cooking steps + captions.
-
 ---
 
 ## 4. FineVideo
@@ -87,7 +96,7 @@ The goal is not to provide download or implementation details, but to **clarify 
 |----------------|----------------|---------|-------|------------|-------------------------|-----------------|
 | LVU-movieclips | Movies         | 62k     | -     | ~2 min     | Scene + QA              | V, A, T         |
 | ActivityNet    | Web videos     | 20k     | 648h  | ~2 min     | Temporal action         | V, A            |
-| YouCook2       | Cooking        | 2k      | 176h  | 5–10 min   | Segment + Captions      | V, A, T         |
+| YouCook2       | Cooking        | 1.7k      | 155h  | 5.3 min   | Segment + Captions      | V, A, T         |
 | FineVideo      | Multi-domain   | 1.5k    | 400h  | 15 min     | Hierarchical labels     | V, A            |
 | COIN           | Instructional  | 11.8k   | 476h  | 2.5 min    | Task → Step segmentation| V, A, T         |
 | BREAKFAST      | Daily activity | 1.7k    | 77h   | 2–5 min    | Frame-level + Sequence  | V, A            |
