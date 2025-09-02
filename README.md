@@ -32,12 +32,6 @@ The goal is not to provide download or implementation details, but to **clarify 
 ---
 
 ## 3. YouCook2
-- **Domain & Task**: Cooking instructional videos; mainly used for *Video Captioning* and *Instructional Understanding*.  
-- **Scale, Length, FPS**:
-- 
-<p align="center">
-  <img src="assets/Youcookii_checklist.png" alt="Dataset overview" width="720">
-</p>
 
 ### Split statistics
 | split      | n_videos | total_minutes | avg_minutes_per_video |
@@ -47,7 +41,18 @@ The goal is not to provide download or implementation details, but to **clarify 
 | validation |      410 |       2132.85 |                  5.20 |
 | **total**  |   **1761** |     **9277.67** |               **5.27** |
 
+- **Domain & Task**: Cooking instructional videos; mainly used for *Video Captioning* and *Instructional Understanding*.  
+- **Duration, FPS, Resolutions**:
+<p align="left">
+  <img src="assets/yc2_distributions.png" alt="Dataset overview" width="720">
+</p>
+
+
 - **Annotation Granularity**: Segment-level cooking steps with captions.  
+<p align="left">
+  <img src="assets/youcookii_ann.png" alt="Dataset overview" width="720">
+</p>
+
 - **Modalities**: Video, Audio, Text (captions).  
 - **Key Challenges**: Long dependencies between sequential steps; fine-grained reasoning required.  
 ---
