@@ -119,3 +119,35 @@ The goal is not to provide download or implementation details, but to **clarify 
 | BREAKFAST      | Daily activity | 1.7k    | 77h   | 2–5 min    | Frame-level + Sequence  | V, A            |
 
 ---
+
+---
+# SOTA Table
+### 🔧 Representation-Learning view 
+
+| Dataset        | Rep-learning angle                               | Strong backbone(s) seen in SOTA papers | Links |
+|----------------|---------------------------------------------------|----------------------------------------|-------|
+| LVU-movieclips | Long-context classification & metadata inference | ViS4mer                                 | [Paper](https://arxiv.org/abs/2204.01692) |
+| ActivityNet    | Recognition / TAL features                        | InternVideo2-6B; E2E-TAD (1B)           | [InternVideo2](https://arxiv.org/abs/2403.15377) · [E2E-TAD CVPR’24](https://openaccess.thecvf.com/content/CVPR2024/papers/Zhu_End-to-End_One-Billion-Parameter_Model_for_Temporal_Action_Detection_CVPR_2024_paper.pdf) |
+| YouCook2       | Dense VC / step localization                      | Vid2Seq pretrain (YT-Temporal-1B)       | [Vid2Seq](https://arxiv.org/abs/2302.14115) |
+| COIN           | Step discovery/localization (weak/self-sup.)      | StepFormer-style encoders               | [StepFormer](https://openaccess.thecvf.com/content/CVPR2023/papers/Dvornik_StepFormer_Self-Supervised_Step_Discovery_and_Localization_in_Instructional_Videos_CVPR_2023_paper.pdf) |
+| BREAKFAST      | Frame-wise segmentation                           | EAST / Difformer                        | [EAST](https://arxiv.org/abs/2503.06316) · [Difformer](https://web.engr.oregonstate.edu/~wangtie/files/ICCV25_Difformer.pdf) |
+| FineVideo      | Long-form hierarchical semantics pretraining      | Video-VLM / ViFM (e.g., InternVideo2)   | [InternVideo2](https://arxiv.org/abs/2403.15377) |
+
+
+
+
+### 🔚 SOTA-by-Task 
+
+| Dataset        | Task (Benchmark use)                                             | Best-known model(s) | Links |
+|----------------|------------------------------------------------------------------|---------------------|-------|
+| **LVU-movieclips** | Long-form video understanding (9 tasks: relationship, scene/place, genre, director, writer, year, etc.) | **ViS4mer** (ECCV 2022) | [Paper](https://arxiv.org/abs/2204.01692) · [Code](https://github.com/amazon-science/video-long-term-dependencies) · [Blog](https://www.amazon.science/blog/vis4mer-highly-accurate-video-computer-vision) |
+| **ActivityNet** | **Temporal Action Localization (v1.3)** | **RDFA-S6 (InternVideo2-6B)** | [Leaderboard summary](https://paperswithcode.com/sota/temporal-action-localization-on-activitynet) · [InternVideo2 Paper](https://arxiv.org/abs/2403.15377) |
+| **ActivityNet** | **Dense Video Captioning (ActivityNet Captions)** | **Vid2Seq** (2023) | [Paper](https://arxiv.org/abs/2302.14115) |
+| **YouCook2** | **Dense Video Captioning** | **Vid2Seq** (2023) | [Paper](https://arxiv.org/abs/2302.14115) |
+| **YouCook2** | Procedural step localization + captioning | **ProcX (Procedure Transformer)** (2024) | [Paper](https://arxiv.org/abs/2311.15964) |
+| **COIN** | Step localization (instructional videos) | **StepFormer** (CVPR 2023) | [Paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Dvornik_StepFormer_Self-Supervised_Step_Discovery_and_Localization_in_Instructional_Videos_CVPR_2023_paper.pdf) |
+| **BREAKFAST** | Fine-grained action segmentation (fully supervised) | **EAST** (2025), **Difformer** (ICCV 2025) | [EAST Paper](https://arxiv.org/abs/2503.06316) · [Difformer Paper](https://web.engr.oregonstate.edu/~wangtie/files/ICCV25_Difformer.pdf) |
+| **FineVideo** | Long-form QA / story & scene understanding (benchmark use; no official leaderboard) | — (no canonical SOTA yet) | [Dataset](https://huggingface.co/datasets/HuggingFaceFV/finevideo) · [Project](https://github.com/huggingface/fineVideo) |
+
+
+---
