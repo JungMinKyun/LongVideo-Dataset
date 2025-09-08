@@ -6,6 +6,8 @@ The goal is not to provide download or implementation details, but to **clarify 
 ---
 
 ## 1. LVU-movieclips
+- [Hompage Link](https://chaoyuan.org/lvu/)
+- [Paper](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://openaccess.thecvf.com/content/CVPR2021/papers/Wu_Towards_Long-Form_Video_Understanding_CVPR_2021_paper.pdf?) - CVPR 2021
 - **Domain & Task**: Movie clips from diverse genres; designed for *Video QA, Emotion Recognition, and Scene Understanding*.  
 - **Scale & Length**: ~62,000 clips from 1,000+ movies; average clip ~2 minutes.  
 - **Annotation Granularity**:  
@@ -20,6 +22,8 @@ The goal is not to provide download or implementation details, but to **clarify 
 ---
 
 ## 2. ActivityNet
+- [Homepage Link](http://activity-net.org/download.html)
+- [Paper](https://openaccess.thecvf.com/content_cvpr_2015/html/Heilbron_ActivityNet_A_Large-Scale_2015_CVPR_paper.html?) - CVPR 2015
 - **Domain & Task**: Untrimmed web videos; widely used for *Temporal Action Localization* and *Activity Recognition*.  
 - **Scale & Length**: ~20,000 videos (~648 hours total); average length ~2 minutes (30s ~ 10min).  
 - **Annotation Granularity**: Temporal segments with activity labels (`start_time`, `end_time`, `label`).  
@@ -41,6 +45,8 @@ The goal is not to provide download or implementation details, but to **clarify 
 | validation |      410 |       2132.85 |                  5.20 |
 | **total**  |   **1761** |     **9277.67** |               **5.27** |
 
+- [Huggingface Link](https://huggingface.co/datasets/lmms-lab/YouCook2)
+- [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/12342?) - AAAI 2018
 - **Domain & Task**: Cooking instructional videos; mainly used for *Video Captioning* and *Instructional Understanding*.  
 - **Duration, FPS, Resolutions**:
 <p align="left">
@@ -58,6 +64,8 @@ The goal is not to provide download or implementation details, but to **clarify 
 ---
 
 ## 4. FineVideo
+- [Huggingface Link](https://huggingface.co/datasets/HuggingFaceFV/finevideo?)
+- [Homepage Link](https://github.com/huggingface/fineVideo) - No Conference 2024
 - **Domain & Task**: Multi-domain (sports, instructional, daily activities); designed for *Fine-grained and Hierarchical Video Understanding*.  
 - **Scale & Length**: ~1,500 videos (~400 hours); average ~15 minutes.  
 - **Annotation Granularity**: Hierarchical labels — coarse actions → fine-grained sub-actions.  
@@ -70,6 +78,8 @@ The goal is not to provide download or implementation details, but to **clarify 
 ---
 
 ## 5. COIN
+- [Homepage Link](https://coin-dataset.github.io/)
+- [Paper](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://openaccess.thecvf.com/content_CVPR_2019/papers/Tang_COIN_A_Large-Scale_Dataset_for_Comprehensive_Instructional_Video_Analysis_CVPR_2019_paper.pdf) - CVPR 2019
 - **Domain & Task**: Instructional videos across 180 daily tasks (e.g., DIY, repair, cooking); used for *Step Segmentation* and *Instructional Representation Learning*.  
 - **Scale & Length**: ~11,827 videos (~476 hours); average ~2.5 minutes.  
 - **Annotation Granularity**:  
@@ -84,6 +94,8 @@ The goal is not to provide download or implementation details, but to **clarify 
 ---
 
 ## 6. BREAKFAST
+- [Homepage Link](https://serre-lab.clps.brown.edu/resource/breakfast-actions-dataset/)
+- [Paper](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://openaccess.thecvf.com/content_cvpr_2014/papers/Kuehne_The_Language_of_2014_CVPR_paper.pdf) - CVPR 2014
 - **Domain & Task**: Daily cooking and morning activity videos; used for *Fine-grained Action Segmentation* and *Sequential Modeling*.  
 - **Scale & Length**: ~1,712 videos (~77 hours); average 2–5 minutes.  
 - **Annotation Granularity**: Frame-level labels for atomic actions; ordered activity sequences (e.g., “take cup → pour coffee → stir”).  
